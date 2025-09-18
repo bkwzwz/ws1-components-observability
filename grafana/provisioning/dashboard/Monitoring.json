@@ -168,7 +168,7 @@
                 "type": "influxdb",
                 "uid": "PF3A0F3054C0DA367"
               },
-              "query": "// v.windowPeriod is a variable referring to the current optimized window period (currently: $interval)\nfrom(bucket: v.bucket)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"snmp\")\n  |> filter(fn: (r) => r[\"_field\"] == \"vmwTunnelNumDevices\")",
+              "query": "// v.windowPeriod is a variable referring to the current optimized window period (currently: $interval)\nfrom(bucket: v.bucket)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"snmp\")\n  |> filter(fn: (r) => r[\"_field\"] == \"omnTunnelNumDevices\")",
               "refId": "A"
             }
           ],
@@ -350,7 +350,7 @@
                 "type": "influxdb",
                 "uid": "PF3A0F3054C0DA367"
               },
-              "query": "// v.windowPeriod is a variable referring to the current optimized window period (currently: $interval)\nfrom(bucket: v.bucket)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"snmp\")\n  |> filter(fn: (r) => r[\"_field\"] == \"vmwTunnelNumFailedHandshakes\")",
+              "query": "// v.windowPeriod is a variable referring to the current optimized window period (currently: $interval)\nfrom(bucket: v.bucket)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"snmp\")\n  |> filter(fn: (r) => r[\"_field\"] == \"omnTunnelNumFailedHandshakes\")",
               "refId": "A"
             }
           ],
@@ -441,7 +441,7 @@
                 "type": "influxdb",
                 "uid": "PF3A0F3054C0DA367"
               },
-              "query": "// v.windowPeriod is a variable referring to the current optimized window period (currently: $interval)\nfrom(bucket: v.bucket)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"snmp\")\n  |> filter(fn: (r) => r[\"_field\"] == \"vmwTunnelNumConnections\")",
+              "query": "// v.windowPeriod is a variable referring to the current optimized window period (currently: $interval)\nfrom(bucket: v.bucket)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"snmp\")\n  |> filter(fn: (r) => r[\"_field\"] == \"omnTunnelNumConnections\")",
               "refId": "A"
             }
           ],
@@ -549,7 +549,7 @@
             "type": "influxdb",
             "uid": "PF3A0F3054C0DA367"
           },
-          "query": "// v.windowPeriod is a variable referring to the current optimized window period (currently: $interval)\nfrom(bucket: v.bucket)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"snmp\")\n  |> filter(fn: (r) => r[\"_field\"] == \"vmwTunnelAPIConnectivity\")\n  |> toBool()\n  ",
+          "query": "// v.windowPeriod is a variable referring to the current optimized window period (currently: $interval)\nfrom(bucket: v.bucket)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"snmp\")\n  |> filter(fn: (r) => r[\"_field\"] == \"omnTunnelAPIConnectivity\")\n  |> toBool()\n  ",
           "refId": "A"
         }
       ],
@@ -641,7 +641,7 @@
             "uid": "PF3A0F3054C0DA367"
           },
           "hide": false,
-          "query": "// v.windowPeriod is a variable referring to the current optimized window period (currently: $interval)\nfrom(bucket: v.bucket)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"snmp\")\n  |> filter(fn: (r) => r[\"_field\"] == \"vmwTunnelAWCMConnectivity\")\n  |> toBool()\n  ",
+          "query": "// v.windowPeriod is a variable referring to the current optimized window period (currently: $interval)\nfrom(bucket: v.bucket)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"snmp\")\n  |> filter(fn: (r) => r[\"_field\"] == \"omnTunnelAWCMConnectivity\")\n  |> toBool()\n  ",
           "refId": "A"
         }
       ],
